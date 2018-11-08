@@ -1,0 +1,327 @@
+<! DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<style>
+/* */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/*begin of header */
+#himg{ height: 70px;
+	 
+     }
+/*end of header */
+
+/*begin of sidenav */
+.sidenav{ height:100%;
+          width:0;
+		  position:fixed;
+		  z-index: 1;
+		  top:0;
+		  left:0;
+		  background-color:rgb(1, 83, 130);
+          overflow-x:hidden;
+		  padding-top:60px;
+		  transition:0.5s;
+		  }
+.anch   {
+           padding: 8px 8px 8px 32px;
+           text-decoration: none;
+           font-size: 25px;
+           color:white;
+           display: block;
+           transition: 0.3s;
+
+        }
+.anch:hover{
+       color: #f1f1f1;
+}
+
+.sidenav #closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .anch {font-size: 18px;}
+}
+/*end of sidenav */
+
+.butn{ color:rgb(1, 83, 130);
+        border:0px groove white;
+        border-radius:10px;
+        background-color:white;
+        padding:5px 50px 5px 50px;
+        position:relative;
+        top:30px;
+        margin-left:15px;
+		right: auto;
+        margin-right: 70px;
+		text-align:center;
+}
+
+.inp{ 
+        padding:5px 5px 5px 5px;
+        position:relative;
+        top:30px;
+        margin-left:15px;
+		right: auto;
+        margin-right: 70px;
+		text-align:center;
+}
+
+#h1,#h2,#h3, #h4, #h5, #h6 ,#h7,#h8,#h9, #h10, #h11, #h12,
+#h13,#h14,#h15, #h16, #h17, #h18{
+            width: 30px;
+            height: 30px;
+            margin-top: 20px;
+            border: 1px solid rgb(1, 83, 130);
+            margin-left: 71px;
+            display: inline-block;
+			position:relative;
+			left:55px;
+        }
+
+        #t11,#t21,#t31 {
+            width: 250px;
+            height: 50px;
+            display: block;
+            margin-left: 10px;
+            margin-top: 8px;
+            background-color: #d3c1a4;
+            box-shadow: 5px 10px grey;
+			position:relative;
+			left:110px;
+        }
+		
+#h21,
+        #h20,
+        #h19 {
+            width: 30px;
+            height: 30px;
+            margin-top: 50px;
+            border: 1px solid rgb(1, 83, 130);
+            margin-left: 10px;
+            display: block;
+            position: relative;
+            top: -483px;
+            left: 430px;
+            }
+
+        #t12 {
+            width: 50px;
+            height: 204px;
+            display: block;
+            margin-left: 25px;
+            margin-top: -197px;
+            box-shadow: 5px 10px grey;
+            position: relative;
+            top: -490px;
+            left: 470px;
+            background-color: #d3c1a4;
+        }
+
+        #h24,
+        #h23,
+        #h22 {
+            width: 30px;
+            height: 30px;
+            margin-top: 49px;
+            border: 1px solid rgb(1, 83, 130);
+            margin-left: 22px;
+            display: block;
+            position: relative;
+            top: -736px;
+            left: 550px;
+        }
+ 
+#h26, #h25{
+            width: 30px;
+            height: 30px;
+            margin-top: 50px;
+            border: 1px solid rgb(1, 83, 130);
+            margin-left: 10px;
+            display: block;
+            position: relative;
+            top: -706px;
+            left: 430px;
+        }
+
+        #t22 {
+            width: 50px;
+            height: 120px;
+            display: block;
+            margin-left: 10px;
+            margin-top: 10px;
+            box-shadow: 5px 10px grey;
+            position: relative;
+            top: -833px;
+            left: 490px;
+            background-color: #d3c1a4;
+        }
+
+        #h28,
+        #h27 {
+            width: 30px;
+            height: 30px;
+            margin-top: 49px;
+            border: 1px solid rgb(1, 83, 130);
+            margin-left: 17px;
+            display: block;
+            position: relative;
+            top: -998px;
+            left: 560px;
+        }
+
+</style>
+</head>
+<body onload="selectNull()">
+<!-- -->
+
+<!--begin of side nav -->
+<div id="mySidenav" class="sidenav">
+<a href='#'  class=" anch" id='closebtn'  >&times;</a>
+<h4 style="color:white;">Employee Name</h4>
+	      <select type="text" placeholder="name" id="name" style="margin-left:10px;width:168px;">
+		  
+		  <option >phani</option>        
+		  <option >prasad</option>        
+          <option >raj</option>
+		  <option >jagadeesh</option>        
+          <option >latha</option>
+		  <option >manasa</option>
+		  <option >bhargavi</option> 
+		  <option >akhila</option>
+          <option >ashok</option>
+          <option >adhithya</option>
+          <option >kalyani</option>	  
+          <option >sudhakar</option>
+          <option>anusha</option>	  
+          <option >santhi</option>
+          <option >rahul</option>
+		  <option >bhargav</option>		  
+		  <option>guru</option>
+          <option >srinivas</option>
+          <option >surya</option>
+		  <option >venkatesh</option>
+          <option >prasanna</option>
+		  <option >vasundara </option>
+		  <option >venkat </option>
+		  <option >drona </option>
+		  <option >yashwanth </option>
+		  <option >narendra </option>
+		  <option >ashok reddy </option>
+		  <option >sai kiran</option>
+		  </select><br>
+<h4 style="color:white;">Employee Number</h4>
+	      <select type="text" placeholder="" id="num" style="margin-left:10px;width:168px;">
+		  
+		  <option >1</option>        
+		  <option >2</option>        
+          <option >3</option> 
+		  <option > 4</option> 
+		  <option >5</option> 
+		  <option >6</option> 
+		  <option >7</option> 
+		  <option >8</option> 
+		  <option >9</option> 
+		  <option >10</option>
+          <option >11</option>
+          <option >13</option>
+          <option >14</option>
+          <option >15</option>
+          <option >17</option>
+          <option >18</option>
+          <option >19</option>
+          <option >20</option>
+          <option >21</option> 
+          <option >22</option> 
+          <option >23</option> 
+          <option >24</option> 
+          <option >25</option> 
+          <option >26</option> 
+          <option >27</option>
+          <option >28</option> 		  
+		  </select><br> 		  
+<p class = "butn " id="arrange" onclick="arrange()">Arrange</p>		  
+<p class = "butn " id="dell"  >Delete<p>			
+<p class = "butn " id="restq"  >Reset</p>
+<p class = "butn " id="swap"   onclick="swap()" >Swap</p>
+<input class = "inp " id = "c1" placeholder ='enter chair no'>
+<p class = "inp" style="color:white;">To</p>
+<input class = "inp" id = "c2" placeholder ='enter chair no'>			
+</div>
+<!--end of side nav-->
+
+<div id='main'>
+
+
+<!--begin of header -->
+<div>
+<img id="himg" src='C:\Users\Gowri Mallrapu\Desktop\dak.pivox\PivoxLabs.png' >
+</div>
+<br>
+<div>
+<span style="font-size:30px;cursor:pointer" id="open">&#9776;Assign</span>
+</div>
+<!--end of header -->
+<div style="border:1px solid rgb(1, 83, 130);width100%;height:550px;">
+ 
+<div id="h1"></div>
+<div id="h2"></div>
+<div id="h3"></div>
+<div id="t11"></div>
+<div id="h4"></div>
+<div id="h5"></div>
+<div id="h6"></div>
+<br>
+<div id="h7"></div>
+<div id="h8"></div>
+<div id="h9"></div>
+<div id="t21"></div>
+<div id="h10"></div>
+<div id="h11"></div>
+<div id="h12"></div>
+<br>
+<div id="h13"></div>
+<div id="h14"></div>
+<div id="h15" title=""></div>
+<div id="t31"></div>
+<div id="h16"></div>
+<div id="h17"></div>
+<div id="h18"></div>
+
+<div id="h19" title=""></div>
+<div id="h20"></div>
+<div id="h21"></div>
+<div id="t12"></div>
+<div id="h22"></div>
+<div id="h23"></div>
+<div id="h24"></div>
+
+<div id="h25"></div>
+<div id="h26"></div>
+<div id="t22"></div>
+<div id="h27"></div>
+<div id="h28"></div>
+
+</div>
+
+
+</div>
+</div>
+<!--
+<script type="text/javascript" src="C:\Users\Gowri Mallrapu\Desktop\dak.pivox\pivox.js"></script> -->
+<script type="text/javascript" src="C:\Users\Gowri Mallrapu\Desktop\dak.pivox\pivox_jquery.js"></script>
+</body>
+</html>
