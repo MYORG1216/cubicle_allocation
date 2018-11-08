@@ -17,6 +17,8 @@ $(document).ready(function(){
 });
 
 
+
+
 /* setting the width of side nav to 0px and pg.c marg.l to 0px */
 $('#closebtn').on("click",function(){
 		$('#mySidenav').width(0);
